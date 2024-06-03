@@ -62,12 +62,16 @@ var container_box=document.querySelector(".inner-container")
 gamevideo.forEach((gameFile)=>{
 
     html=`
-                <a href="" class="box">
+                <a href="${gameFile.location}" class="box">
                     <img class="games-image" src="${gameFile.image}" width="100" height="100">
 
                         <div class="name">
                          <p>${gameFile.name}</p>
                          <p style="color:green; text-align:end;">${gameFile.rate}</p>
+                        </div>
+                        <div class="buying-box">
+                        <div class="buy">BUY</div>
+                        <button class="cart-button">CART</button>
                         </div>
                 </a>
                
